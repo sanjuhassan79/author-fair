@@ -1,0 +1,11 @@
+.cardextr{
+    flex-direction: row
+}
+img.img-fluid.rounded-start {
+    height: 350px;
+}
+.detail {
+    font-size: 19px;
+    font-weight: 500;
+    color: #5a90bf;
+}
