@@ -1,9 +1,11 @@
 import React from 'react';
+
 import './Author.css'
 
 const Product = (props) => {
     // console.log(props.product);
     const {name,image,book_name,country,age,book_price}=props.product;
+    // const element = <FontAwesomeIcon icon={faShoppingCart} />
     return (
         <div>
              <div className="card cardextr">
@@ -17,8 +19,8 @@ const Product = (props) => {
         <p className="card-text detail"> <span className="text-uppercase">Book Name</span> : {book_name}</p>
         <p className="card-text detail"> <span className="text-uppercase">Country</span> : {country}</p>
         <p className="card-text detail"> <span className="text-uppercase">Age</span> : {age}</p>
-        <p className="card-text detail"> <span className="text-uppercase">Book Price</span> : {book_price}</p>
-        <button onClick={()=>props.addToCartHandle(props.product)} type="button" className="btn btn-secondary">Add To Cart</button>
+        <p className="card-text detail"> <span className="text-uppercase">Book Price</span> :$ {book_price}</p>
+        <button onClick={()=>props.addToCartHandle(props.product)} type="button" className="btn btn-secondary"><i class="fas fa-shopping-cart"></i>  Add To Cart</button>
       </div>
     </div>
     </div>

@@ -48,8 +48,7 @@ addToCartHandle={addToCartHandle}
               <div className="col-lg-2">
               <div className="Card">
                <Cart
-               key={cart.id}
-               
+              
                cart={cart}
                ></Cart>
            </div>
